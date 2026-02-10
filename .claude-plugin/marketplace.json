@@ -1,0 +1,22 @@
+{
+  "name": "formae-marketplace",
+  "owner": {
+    "name": "Platform Engineering Labs"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for infrastructure-as-code with formae",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "formae-mcp",
+      "source": {
+        "source": "github",
+        "repo": "platform-engineering-labs/formae-mcp"
+      },
+      "description": "MCP server and skills for formae: manage cloud resources, handle drift, discover infrastructure, and build plugins",
+      "version": "0.1.0",
+      "strict": true
+    }
+  ]
+}
