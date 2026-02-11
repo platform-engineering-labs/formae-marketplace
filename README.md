@@ -26,4 +26,4 @@ Install:
 
 ## License
 
-FSL-1.1-MIT
+FSL-1.1-ALv2
