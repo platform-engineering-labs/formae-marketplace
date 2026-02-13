@@ -15,7 +15,7 @@
         "url": "https://github.com/platform-engineering-labs/formae-mcp.git"
       },
       "description": "MCP server and skills for formae: manage cloud resources, handle drift, discover infrastructure, and build plugins",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "strict": true
     }
   ]
