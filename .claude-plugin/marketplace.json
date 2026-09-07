@@ -9,12 +9,12 @@
   },
   "plugins": [
     {
-      "name": "formae-mcp",
+      "name": "formae",
       "source": {
         "source": "url",
         "url": "https://github.com/platform-engineering-labs/formae-mcp.git"
       },
-      "description": "MCP server and skills for formae: manage cloud resources, handle drift, discover infrastructure, and build plugins",
+      "description": "MCP server and skills for formae: hosted or self-hosted, connect cloud accounts, manage resources, handle drift, and build plugins",
       "strict": true
     }
   ]
