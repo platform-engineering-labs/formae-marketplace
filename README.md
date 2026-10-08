@@ -1,6 +1,6 @@
 # formae-marketplace
 
-Claude Code plugin marketplace for [formae](https://formae.io) infrastructure-as-code.
+Claude Code plugin marketplace for [formae](https://github.com/platform-engineering-labs/formae) Infrastructure As Code.
 
 ## Setup
 
@@ -12,17 +12,26 @@ Register the marketplace in Claude Code:
 
 ## Available Plugins
 
-### formae-mcp
+### formae
 
-MCP server and skills for managing cloud infrastructure through formae. Provides 15 MCP tools and 12 skills for deploying, querying, and managing infrastructure.
+MCP server and skills for formae: hosted or self-hosted, connect cloud accounts, manage resources, handle drift, and build plugins. Source and the list of skills: [formae-mcp](https://github.com/platform-engineering-labs/formae-mcp).
 
 Install:
 
 ```
-/plugin install formae-mcp@formae-marketplace
+/plugin install formae@formae-marketplace
 ```
 
-**Prerequisites:** Go 1.25+ and a running formae agent (`formae agent start`). The MCP server binary is built automatically on first use.
+**Prerequisites:** self-hosted formae (a running agent and a profile pointing at it) or a formae Cloud installation. After installing, run `/formae:setup` to sign in or set up a profile. On first use the plugin downloads a prebuilt MCP server; no Go toolchain is required.
+
+**Previously installed as `formae-mcp`?** The plugin was renamed. Uninstall the old entry and install `formae`:
+
+```
+/plugin uninstall formae-mcp@formae-marketplace
+/plugin install formae@formae-marketplace
+```
+
+Other clients (Codex, Cursor, OpenCode) and the full migration steps: [AI assistants](https://docs.formae.ai/documentation/guides/ai-coding-assistants).
 
 ## License
 
